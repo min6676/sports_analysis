@@ -3,7 +3,7 @@ import subprocess
 
 import pytube
 
-yt = pytube.YouTube("https://www.youtube.com/watch?v=P8TcxV4fFUY") #다운받을 동영상 URL 지정
+yt = pytube.YouTube("https://youtu.be/5XCzc6CofG8") #다운받을 동영상 URL 지정
 
 vids= yt.streams.all()
 
@@ -13,7 +13,7 @@ for i in range(len(vids)):
 
 vnum = int(input("다운 받을 화질은? "))
 
-parent_dir = "C:\workspace\sports_analysis" #저장 경로 지정(Windows or mac)
+parent_dir = "C:/workspace/sports_analysis/videos/" #저장 경로 지정(Windows or mac)
 vids[vnum].download(parent_dir) #다운로드 수행
 
 #new_filename = input("변환 할 mp3 파일명은?")
