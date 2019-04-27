@@ -3,7 +3,7 @@ import subprocess
 
 import pytube
 
-yt = pytube.YouTube("https://youtu.be/5XCzc6CofG8") #다운받을 동영상 URL 지정
+yt = pytube.YouTube("https://youtu.be/i_Q5apo1N7Y") #다운받을 동영상 URL 지정
 
 vids= yt.streams.all()
 
